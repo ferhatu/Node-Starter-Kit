@@ -11,6 +11,12 @@ app.get("/codeyourfuture", (req, res) => {
   res.send("how are you doing");
 });
 
+app.get("/chocolate", (req, res) => {
+  let set = req.query.amount;
+
+  res.send("Mm chocolate : " + set);
+});
+
 app.listen(3000, () => {
   console.log("Listening on port 3000");
 });
